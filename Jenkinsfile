@@ -39,7 +39,7 @@ pipeline {
                             configName: 'sshserver', // Configure this in "Manage Jenkins -> Configure System"
                             transfers: [
                                 sshTransfer(
-                                    sourceFiles: 'Dockerfile, target/*.war',
+                                    sourceFiles: 'Dockerfile, **/*.war',
                                     remoteDirectory: '/home/ansible',
                                     removePrefix: '',
                                     execCommand: ''
