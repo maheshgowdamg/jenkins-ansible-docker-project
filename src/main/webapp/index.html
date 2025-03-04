@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <!-- //<link rel="stylesheet" href="template1.css"> -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<style>
+
+
+    
+#loc{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+}
+.icon1{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    margin-left: 20px;
+    
+}
+
+
+.icon3{
+    margin-right: 60px;
+}
+header{
+    background-image: url("hero-bg.jpg");
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  
+    height: 60px;
+    width: 100%;
+    align-items: center;
+}
+#a{
+    margin-left: 20px;
+    font-size: 20px;
+}
+#items{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+.anchor{
+    text-decoration: none;
+   
+    
+}
+.anchor:hover{
+    color: black;
+    
+
+}
+#you{
+    position: absolute;
+    left: 100px;
+    font-size: 50px;
+    color: white;
+}
+#our{
+    position: absolute;
+    left: 100px;
+    top: 220px;
+    font-size: 50px;
+    color: gold;
+
+}
+#l{
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    color: white;
+    font-size: 18px;
+
+}
+#button1{
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    left: 100px;
+    top: 400px;
+    border: 1px solid white;
+    background-color: white;
+    
+    
+
+}
+#button2{
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    left: 300px;
+    top: 400px;
+    background-color:gold;
+    border: 1px solid gold;
+    color: white;
+
+}
+#button1:hover{
+    background-color: black;
+    color: white;
+}
+#button2:hover{
+    background-color: black;
+    color:gold;
+}
+article{
+    position: absolute;
+    left: 1400px;
+    top: 520px;
+}
+#block1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position: absolute; */
+    height: 600px;
+    width: 100%;
+    /* background-color: aqua; */
+    /* left: 1px;
+    top: 540px; */
+   
+}
+#block1-img{
+    position: absolute;
+    left: 100px;
+    
+    
+}
+#box1{
+    background-color: white;
+    height: 350px;
+    width: 700px;
+    position: absolute;
+    left: 660px;
+    top: 650px;
+
+}
+#who{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+hr{
+    height: 3px;
+    width: 50px;
+    background-color: gold;
+    border: 3px solid gold;
+    position: absolute;
+    top: 50px;
+    left: 27px;
+    border-radius: 20px;
+}
+#para{
+    text-align: justify;
+    position: absolute;
+    /* bottom: 100px; */
+    top: 65px;
+    left: 20px;
+    font-size: 15px;
+    word-spacing: 4px;
+    font-size: 20px;
+}
+#button3{
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    font-size: 17px;
+    position: absolute;
+    left: 20px;
+    top: 235px;
+    background-color:gold;
+    border: 1px solid gold;
+    color: white;
+
+}
+#button3:hover{
+    background: transparent;
+    color:gold;
+}
+#block2{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    color: white;
+   
+}
+#heading{
+    text-align: center;
+   position: relative;
+   top: 60px;
+   
+}
+#box2{
+    
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+#box3{
+    height: 350px;
+    width: 365px;
+    background-color: white;
+    color: black;
+    /* position: relative;
+    left:50px; */
+}
+#home{
+    position: relative;
+    left: 145px;
+}
+#box4{
+    height: 350px;
+    width: 365px;
+    background-color: white;
+    color: black;
+    /* position: relative;
+    right:30px; */
+}
+#box5{
+    height: 350px;
+    width: 365px;
+    background-color: white;
+    color: black;
+    /* position: relative;
+    right: 110px; */
+}
+#heading1{
+    text-align: center;
+   position: relative;
+   top: 40px;
+   /* display: flex;
+   justify-content: center; */
+
+
+}
+#para1{
+  
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-size: 22px;
+    
+}
+#button4{
+    height: 45px;
+    width: 170px;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    top: 40px;
+    left: 95px;
+    background-color:gold;
+    border: 1px solid gold;
+    color: white;
+   
+    
+}
+
+#heading2{
+    text-align: center;
+   position: relative;
+   top: 40px;
+   /* display: flex;
+   justify-content: center; */
+
+
+}
+#para2{
+  
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-size: 22px;
+    
+}
+#button5{
+    height: 45px;
+    width: 170px;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    top: 40px;
+    left: 95px;
+    background-color:gold;
+    border: 1px solid gold;
+    color: white;
+   
+    
+}
+
+#heading3{
+    text-align: center;
+   position: relative;
+   top: 40px;
+   /* display: flex;
+   justify-content: center; */
+
+
+}
+#para3{
+  
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-size: 22px;
+    
+}
+#button6{
+    height: 45px;
+    width: 170px;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    top: 40px;
+    left: 95px;
+    background-color:gold;
+    border: 1px solid gold;
+    color: white;
+   
+    
+}
+
+#button4:hover{
+    background: transparent;
+    color:gold;
+}
+#button5:hover{
+    background: transparent;
+    color:gold;
+}
+
+#button6:hover{
+    background: transparent;
+    color:gold;
+}
+
+#block3{
+    height: 500px;
+    width: 100%;
+    
+   
+
+}
+#box6{
+    height: 450px;
+    width: 70%;
+   
+   position: absolute;
+   left: 240px;
+   top: 1800px;
+}
+#heading4{
+    text-align: center;
+   position: relative;
+   top: 40px;
+   font-weight: bolder;
+}
+#line{
+    height: 3px;
+    width: 50px;
+    background-color: gold;
+    border: 1px solid gold;
+    position: absolute;
+    top: 100px;
+    left: 490px;
+    border-radius: 20px;
+}
+
+
+#block3-img{
+    position: absolute;
+    left: 450px;
+    top: 140px;
+    height: 120px;
+    width: 150px;
+        
+}
+#heading5{
+    text-align: center;
+    position: relative;
+    top: 180px;
+    font-size: 24px;
+    right: 5px;
+    font-weight: bolder;
+  
+   
+}
+#para4{
+  
+    text-align: center;
+    position: relative;
+    top: 175px;
+    font-size: 22px;
+    
+}
+#block4{
+    height: 620px;
+    width: 100%;
+   background-image: url("contact-bg.jpg");
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+    
+   
+
+}
+#heading6{
+    text-align: center;
+    position: relative;
+    top: 60px;
+    font-size: 35px;
+    right: 5px;
+    font-weight: bolder;
+    color: white;
+
+
+}
+#line{
+    height: 3px;
+    width: 50px;
+    background-color: gold;
+    border: 3px solid gold;
+    position: relative;
+    top: 40px;
+    left:1px;
+
+    border-radius: 20px;
+}
+#box7{
+    height: 550px;
+    width: 70%;
+   
+   position: relative;
+   left: 240px;
+    top: 60px;
+   
+   
+}
+#box8{
+    height: 70px;
+    width: 85%;
+   
+   position: relative;
+   left: 210px;
+   top: 30px;
+}
+
+#box9{
+    height: 70px;
+    width: 85%;
+   
+   position: relative;
+   left: 210px;
+   top: 35px;
+}
+#box10{
+    height: 70px;
+    width: 85%;
+   
+   position: relative;
+   left: 210px;
+   top: 30px;
+}
+#box11{
+    height: 70px;
+    width: 85%;
+   
+   position: relative;
+   left: 210px;
+   top: 32px;
+}
+.input{
+    height: 35px;
+    width: 65%;
+    font-size:15px;
+    font-weight:500;
+   border: 1px solid white;
+    
+}
+#input1{
+    height: 100px;
+    width: 65%;
+    font-size:15px;
+    font-weight:500;
+    border: 1px solid white;
+    
+
+}
+#button7{
+    height: 45px;
+    width: 170px;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    top: 110px;
+    left: 420px;
+    background-color:gold;
+    border: 1px solid gold;
+    color: white;
+   
+    
+}
+#button7:hover{
+    background: transparent;
+    color:gold;
+}
+#block5{
+        height: 800px;
+        width: 100%;
+        /* background-color: aqua; */
+     
+    
+       
+    
+
+}
+#heading7{
+    text-align: center;
+    position: relative;
+    top: 60px;
+    font-size: 35px;
+    right: 5px;
+    font-weight: bolder;
+  
+
+
+}
+#line1{
+    height: 3px;
+    width: 50px;
+    background-color: gold;
+    border: 1px solid gold;
+    position: relative;
+    top: 40px;
+    left: 1px;
+    border-radius: 20px;
+}
+#box12{
+    height: 70px;
+    width: 74%;
+   font-size: 21px;
+   text-align: center;
+   position: relative;
+   left: 200px;
+   top: 50px;
+}
+
+#block6{
+    height:500px;
+    width: 90%;
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 50px;
+    top: 50px;
+   
+
+   
+    
+   
+
+
+}
+/* #box61{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aqua;
+} */
+#image1{
+    height: 400px;
+    width: 320px;
+   margin-bottom: 40px;
+   margin-left: 80px;
+   
+}
+#image2{
+    height: 400px;
+    width: 320px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    
+}
+#image3{
+    height: 400px;
+    width: 320px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+#button8{
+    height: 45px;
+    width: 170px;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    top:240px ;
+    right: 630px;
+    
+    background-color:gold;
+    border: 1px solid gold;
+    color: white;
+  
+   
+    
+}
+#button8:hover{
+    background: transparent;
+    color:gold;
+}
+#block7{
+    height:400px;
+    width: 100%;
+   background-color: black;
+   color: white;
+
+
+   
+    
+   
+
+}
+#block71{
+    display: flex;
+    justify-content: space-evenly;
+  position: relative;
+  top: 50px;
+  
+
+
+}
+#box13{
+    height: 200px;
+    width: 270px;
+   
+  
+   
+/*   
+   background-color: aqua; */
+
+}
+#heading9{
+        margin-top: 10px;
+        font-size: 35px;
+       
+        font-weight: bolder;
+}
+
+
+#para5{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#box14{
+    height: 200px;
+    width: 250px;
+   
+  
+    
+   
+   
+   /* background-color: aqua; */
+
+}
+#heading10{
+    margin-top: 10px;
+    font-size: 35px;
+    right: 5px;
+    font-weight: bolder;
+}
+#para6{
+margin-top: 10px;
+font-size: 20px;
+font-weight: bold;
+line-height: 30px;
+}
+#box15{
+    height: 200px;
+    width: 300px;
+    
+
+    
+   
+   
+   /* background-color: aqua; */
+
+ 
+
+}
+#lorem{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 42px;
+}
+#lorem2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 42px;
+}
+#lorem3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 42px;
+}
+#heading11{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 35px;
+    right: 5px;
+    font-weight: bolder;
+}
+
+
+
+#box16{
+    height: 200px;
+    width: 300px;
+    
+    
+    
+   
+   
+   /* background-color: aqua; */
+
+}
+#heading12{
+    margin-top: 10px;
+    font-size: 35px;
+    right: 5px;
+    font-weight: bolder;
+}
+
+#box17{
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+
+   
+   
+   /* background-color: aqua; */
+}
+.mail{
+    height: 40px;
+    width:300px ;
+    font-size: 20px;
+    border-radius: 25px;
+    
+    font-weight: bold;
+    border: 3px solid white;
+   
+  
+}
+#button9{
+    height: 45px;
+    width: 170px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 20px;
+    
+    background-color:gold;
+    border: 1px solid gold;
+    color: white;
+    font-weight: bold;
+  
+}
+#heading13{
+    font-size: 20px;
+    margin-top: 170px;
+    margin-left: 520px;
+}
+
+
+
+</style>
+    
+</head>
+<body>
+   <header>
+        <nav id="loc">
+            <a  href=""><span class="icon1"><i  class="fa-solid fa-location-dot fa-xs , icon1" style="color: #FFD43B;" ></i> Rajajinagar Bangalore</span></a>
+            <a href=""><span ><i  class="fa-solid fa-phone , " style="color: #FFD43B;" ></i> Call : +918310092550</span></a>
+            <a href=""><span class="icon3"><i  class="fa-solid fa-envelope ,icon3" style="color: #FFD43B;" ></i> maheshgowdamg@gmail.com</span></a>
+        </nav>
+        <div>
+            <nav >
+                <div id="a">
+                   <a class="anchor" href=""><h1>Guarder</h1></a> 
+                </div>
+                <div id="items">
+                   <a class="anchor" href=""><h1>HOME</h1></a> 
+                    <a class="anchor" href=""><h1>ABOUT</h1></a>
+                    <a class="anchor" href=""><h1>SERVICES</h1></a>
+                    <a class="anchor" href=""><h1>GUARDS</h1></a>
+                    <a class="anchor" href=""><h1>CONTACT US</h1></a>
+
+                </div>
+            </nav><br><br>
+            <h1 id="you">YOUR SAFTEY</h1>
+            <h1 id="our">OUR RESPONSIBILITY</h1>
+            <h4 id="l">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod magna <br> aliqua. Ut enim ad minim veniam</h4>
+            <button id="button1"> Read More</button> <button id="button2">Get A Quote</button><br>
+            <article>
+           <a href=""> <i class="fa-solid fa-circle" style="color: #FFD43B;"></i></a>
+           <a href=""> <i class="fa-solid fa-circle" style="color: #dfe2e7;"></i></a>
+            <a href=""><i class="fa-solid fa-circle" style="color: #FFD43B;"></i></article></a>
+
+        </div>
+      
+        
+   
+</header>
+<br>
+<div id="block1">
+        <img id="block1-img" src="about-img.jpg" alt="" style="height: 450px; width: 600px;">
+        <div id="box1">
+            <h1 id="who">WHO ARE WE?</h1>
+            <hr >
+            <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod <br>tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim <br> veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea <br> commodo consequat. Duis aute irure dolorin reprehenderit in voluptate <br> velit</p> 
+           <a href=""> <button id="button3">READ MORE</button></a></div>
+</div>
+
+
+<div id="block2">
+    <h1 id="heading">OUR SERVICES</h1>
+    <div id="box2">
+        <div id="box3" >
+           
+            <h1 id="heading1">HOME SECURITY</h1>
+            <p id="para1">Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut minus tenetur corrupti excepturi ullam.</p>
+            <a href=""> <button id="button4">READ MORE</button></a>
+        </div>
+        <div id="box4"><h1 id="heading2">OFFICE SECURITY</h1>
+            <p id="para2">Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut minus tenetur corrupti excepturi ullam</p>
+            
+            <a href=""> <button id="button5">READ MORE</button></a>
+
+        </div>
+        <div id="box5">
+            <h1 id="heading3">BODYGUARD</h1>
+            <p id="para3">Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut minus tenetur corrupti excepturi ullam</p>
+            <a href=""> <button id="button6">READ MORE</button></a>
+
+        </div>
+    </div>
+
+</div>
+
+<div id="block3">
+    <div id="box6">
+        <h1 id="heading4">WHAT IS SAYS OUR CLIENTS</h1>
+        <hr id="line">
+        <img id="block3-img" src="client.png" alt="">
+        <h3 id="heading5">Minim Veniam</h3>
+        <p id="para4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip</p>
+    </div>
+</div>
+<div id="block4">
+    <h1 id="heading6">GET IN TOUCH</h1>
+    <hr id="line">
+    <div id="box7">
+       
+        <form action="">
+            
+                
+        <div id="box8">
+            <input class="input" type="text" placeholder="FULL NAME" required>
+        </div>
+        <div id="box9">
+            <input  class="input" type="email" placeholder="EMAIL" required>
+        </div>
+        <div id="box10">
+            <input  class="input" type="tel" placeholder="PHONE NUMBER" minlength="0" maxlength="10" required>
+        </div>
+        <div id="box11">
+           <input type="text" id="input1" placeholder="MESSAGE"></div>
+         <a href="" id="a"> <button id="button7">SEND</button></a>
+
+        
+        </form>
+    </div>
+</div>
+ <div id="block5">
+
+    <h1 id="heading7">OUR GUARDS</h1>
+    <hr id="line1">
+    <div id="box12">
+        <p>Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam nulla mauris iaculis. Erat eget vitae malesuada, tortor tincidunt porta lorem lectus.</p>
+    </div>
+    
+    <div id="block6">
+        <div>
+        <img id="image1" src="t1.jpg" alt=""></div>
+    
+    <div>
+        <img id="image2" src="t2.jpg" alt="">
+        </div>
+        <div>
+        <img id="image3" src="t3.jpg" alt="">
+        </div>
+        <a href=""> <button id="button8">VEIW ALL</button></a>
+    </div>
+   
+    </div>
+    
+<br><br><br>
+
+
+  
+<div id="block7">
+    <div id="block71">
+    <div id="box13">
+        <h1 id="heading9">Guarder</h1>
+        <P id="para5">dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r</P>
+    </div>
+    <div id="box14">
+        <h1 id="heading10">Useful Link</h1>
+        <p id="para6">dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam,
+            quisdotempor incididunt r</p>
+    </div>
+    <div id="box15">
+        <h1 id="heading11">Contact Us</h1>
+        <a href=""><span  id="lorem"><i  class="fa-solid fa-location-dot fa-xs , icon1"  ></i> Lorem ipsum dolor sit amet,</span></a><br>
+            <a id="lorem2" href=""><span ><i  class="fa-solid fa-phone , "  ></i> Call : +01 1234567890</span></a><br>
+            <a id="lorem3" href=""><span><i  class="fa-solid fa-envelope ,icon3" ></i> mail@domain.com</span></a>
+    </div>
+    <div id="box16">
+        <h1 id="heading12">Newsletter</h1>
+        <form action="">
+            <input class="mail" type="email" placeholder="Enter your email" required><br><br>
+            <button id="button9">SUBSCRIBE</button>
+            <div id="box17" align="center">
+                <a class="foot" href=""><i class="fa-brands fa-facebook-f " ></i></a>
+                <a class="foot" href=""><i class="fa-brands fa-twitter"></i></a>
+                <a class="foot" href=""><i class="fa-brands fa-youtube"></i></a>
+                <a class="foot" href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </form></div></div>
+        
+            <h1 id="heading13">© 2024 All Rights Reserved. By HTML Design</h1>
+        
+        
+</div>
+    
+
+</body>
+</html>
