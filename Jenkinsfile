@@ -26,7 +26,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh "docker build -t $DOCKER_IMAGE ."
+                    sh 'docker build -t $DOCKER_IMAGE .'
                 }
             }
         }
@@ -39,7 +39,7 @@ pipeline {
                             configName: 'sshserver', // Configure this in "Manage Jenkins -> Configure System"
                             transfers: [
                                 sshTransfer(
-                                    sourceFiles: 'Dockerfile, **/webapp.war',
+                                    sourceFiles: 'Dockerfile, target/webapp.war',
                                     remoteDirectory: '/home/ansible',
                                     removePrefix: '',
                                     execCommand: ''
