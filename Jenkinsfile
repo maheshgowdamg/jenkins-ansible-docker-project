@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    tools{
+        maven 'maven'
+    }
     environment {
         DOCKER_IMAGE = 'app'
         CONTAINER_NAME = 'webapp'
@@ -17,7 +19,7 @@ pipeline {
 
         stage('Build Application') {
             steps {
-                sh 'mvn clean package -DskipTests'
+                sh 'mvn clean package '
             }
         }
 
