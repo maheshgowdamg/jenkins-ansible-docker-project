@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    tools{
+    tools {
         maven 'maven'
     }
     environment {
@@ -19,14 +19,20 @@ pipeline {
 
         stage('Build Application') {
             steps {
-                sh 'mvn clean package '
+                sh 'mvn clean package'
+            }
+        }
+
+        stage('Debug Files') {
+            steps {
+                sh 'ls -l target/'
             }
         }
 
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'docker build -t $DOCKER_IMAGE .'
+                    sh "docker build -t $DOCKER_IMAGE ."
                 }
             }
         }
@@ -36,10 +42,10 @@ pipeline {
                 sshPublisher(
                     publishers: [
                         sshPublisherDesc(
-                            configName: 'sshserver', // Configure this in "Manage Jenkins -> Configure System"
+                            configName: 'sshserver',
                             transfers: [
                                 sshTransfer(
-                                    sourceFiles: 'Dockerfile, target/webapp.war',
+                                    sourceFiles: 'Dockerfile, target/webapp.war', // Fix file path
                                     remoteDirectory: '/home/ansible',
                                     removePrefix: '',
                                     execCommand: ''
