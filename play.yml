@@ -12,14 +12,14 @@
       ignore_errors: yes
 
     - name: Remove old Docker image if exists
-      command: docker rmi -f maheshgowdamg25/app:latest
+      command: docker rmi -f maheshgowdamg25/webapp:latest
       ignore_errors: yes
 
     - name: Log in to Docker Hub
       command: echo "Mahi@2001" | docker login -u maheshgowdamg25 --password-stdin
 
     - name: Pull Docker Image from Docker Hub
-      command: docker pull maheshgowdamg25/app:latest
+      command: docker pull maheshgowdamg25/webapp:latest
 
     - name: Run Docker Container
-      command: docker run -it -d --name web -p 8081:8080 maheshgowdamg25/app:latest
+      command: docker run -it -d --name web -p 8081:8080 maheshgowdamg25/webapp:latest
