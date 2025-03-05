@@ -1,761 +1,394 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template2</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="template2.css"> -->
-
-    <style>
-
-#block1{
-    background-image: url("hero-bg.jpg");
-    height: 80vh;
-    width: 100%;
-    
+    <title>Task17</title>
+    <!-- <link rel="stylesheet" href="template3.css"> -->
+     <style>
+#block1
+{
+    height: 600px;
+    width: 100vw;
+    background-image: url("WhatsApp Image 2024-07-19 at 12.12.48 PM.jpeg");
+    color: white;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-attachment:scroll;
-    background-size: 100vw 80vh;
-   
-   
+    background-size: 100vw;
+    position: relative;
 }
-#box1{
+#list
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+#items
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
-
-
+    font-size: 20px;
+    font-weight: bolder;
 }
-#fregg{
-    font-size: 25px;
-    margin-left: 100px;
+#list>a:hover
+{
+    text-decoration: underline red 5px;
     
-   
 }
 a{
     text-decoration: none;
     color: white;
 }
-.heading{
-    font-size: 23px;
-}
-#box2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-
-}
-#heading1{
-    color: white;
-    position: absolute;
-    top: 130px;
-    left: 100px;
-    font-size: 45px;
-    font-weight: bold;
-}
-
-#heading2{
-    color: white;
-    position: absolute;
-    top: 195px;
-    left: 100px;
-    font-size: 50px;
-    font-weight: bold;
-    color: orangered;
-}
-
-#para1{
-    color: white;
-    position: absolute;
-    top: 300px;
-    left: 100px;
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-#block1 button{
-    position: absolute;
-    top: 410px;
-    left: 100px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: orangered;
-    color: white;
-    border: 2px solid orangered;
-    height: 50px;
-    width: 190px;
-    border-radius: 10px;
-}
-#block1 button:hover{
-    background-color: transparent;
-    border: 2px solid orangered;
-    color: orangered;
-}
-#block2{
-    height: 480px;
-    width: 100%;
-    
-    
-}
-#box3{
-    /* height: 500px;
-    width: 100%; */
-    /* background-color: red; */
-    position: absolute;
-}
-#box3>h1{
-    position: absolute;
-    top: 40px;
-    left: 100px;
-   
-    width: 170px;
- 
-    font-size: 40px;
-    font-weight: bolder;
-}
-#box3 hr{
-
-    width: 190px;
-    position: absolute;
-    top: 110px;
-    left: 90px;
-    background-color:grey;
-    font-weight: bold;
-    border: 2px solid gray;
-  
-
-}
-
-#box3>p{
-    position: absolute;
-    top: 115px;
-    left: 90px;
-    height: 200px;
-    width: 700px;
-    
-    font-size: 24px;
-    line-height: 1.2;
-    text-align: left;
-
-}
-
-
-
-
-#box3>img{
-    position: absolute;
-    top: 100px;
-    left:800px;
-    
-    
-}
-#box3 button{
-    position: absolute;
-    top: 350px;
-    left: 90px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: orangered;
-    color: white;
-    border: 2px solid orangered;
-    height: 50px;
-    width: 190px;
-    border-radius: 10px;
-}
-#box3 button:hover{
-    background-color: transparent;
-    border: 2px solid orangered;
-    color: orangered;
-}
-#block3{
-    height: 2100px;
-    width: 100%;
-    background-image: url("body_bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: 100vw, 100vh;
-    position: relative;
-   
-}
-#block3>h1:first-child{
-    position: absolute;
-    top:40px;
-   left:620px;
-   font-size: 40px;
-}
-#block3 hr{
-
-    width: 290px;
-    position: absolute;
-    top: 110px;
-    left: 610px;
-    background-color:grey;
-    font-weight: bold;
-    border: 2px solid gray;
-  
-
-}
-#box4{
-    height: 650px;
-    width: 480px;
-    
-    
-    position: relative;
-    top: 170px;
-    left: 90px;
-   
-   
-}
-#box5{
-    height: 650px;
-    width: 480px;
-  
-   position: relative;
-   bottom: 480px;
-   left: 800px;
-  
-
-}
-#box4 img:nth-child(1){
-    margin: 10px;
-}
-#box4 h1:nth-child(2){
-   position: relative;
-   bottom: 40px;
-}
-#box4 p:nth-child(3){
-    position: relative;
-    bottom: 50px;
-   
-
-    font-size: 20px;
-    line-height: 1.3;
-    text-align: left;
-
-
-}
-#box4 button:first-of-type{
-    position: absolute;
-    top: 250px;
-    left:2px;
-    font-size: 20px;
-   
-    background-color: transparent;
-    
-    color:orangered;
-    border: 2px solid orangered;
-    height: 50px;
-    width: 150px;
-    
-}
-
-
-#box4 img:last-of-type{
-    margin-top: 30px;
-}
-#box4 h1:last-of-type{
-   position: relative;
-   bottom: 28px;
-}
-#box4 p:last-of-type{
-    position: relative;
-    bottom: 40px;
-   
-
-    font-size: 20px;
-    line-height: 1.3;
-    text-align: left;
-
-
-}
-#box4 button:last-of-type{
-    position: absolute;
-    top: 600px;
-    left:2px;
-    font-size: 20px;
-   
-    background-color: transparent;
-    
-    color:orangered;
-    border: 2px solid orangered;
-    height: 50px;
-    width: 150px;
-    
-}
-
-
-#box5 img:nth-child(1){
-    margin: 15px;
-}
-#box5 h1:nth-child(2){
-   position: relative;
-   bottom: 35px;
-}
-#box5 p:nth-child(3){
-    position: relative;
-    bottom: 45px;
-   
-
-    font-size: 20px;
-    line-height: 1.3;
-    text-align: left;
-
-
-}
-#box5 button:first-of-type{
-    position: absolute;
-    top: 250px;
-    left:2px;
-    font-size: 20px;
-   
-    background-color: transparent;
-    
-    color:orangered;
-    border: 2px solid orangered;
-    height: 50px;
-    width: 150px;
-    
-}
-
-
-#box5 img:last-of-type{
-    margin-top: 40px;
-}
-#box5 h1:last-of-type{
-   position: relative;
-   bottom: 28px;
-}
-#box5 p:last-of-type{
-    position: relative;
-    bottom: 40px;
-   
-
-    font-size: 20px;
-    line-height: 1.3;
-    text-align: left;
-
-
-}
-#box5 button:last-of-type{
-    position: absolute;
-    top: 600px;
-    left:2px;
-    font-size: 20px;
-   
-    background-color: transparent;
-    
-    color:orangered;
-    border: 2px solid orangered;
-    height: 50px;
-    width: 150px;
-    
-}
-#box6{
-    height: 300px;
-    width: 100%;
-    
-    position: absolute;
-    top:850px;
-    
-}
-#box6 h1:first-of-type{
-    position: absolute;
-    left: 90px;
-   
-    
-}
-#box6 p:first-of-type{
-    position: absolute;
-    top: 60px;
-    left: 90px;
-    font-size: 20px;
-   
-    
-}
-#box6 button:first-of-type{
-    position: absolute;
-    top: 65px;
-    left:1150px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: orangered;
-    color: white;
-    border: 2px solid orangered;
-    height: 50px;
-    width: 200px;
-    border-radius: 8px;
-    
-    
-}
-#box6 button:hover{
-    background-color: transparent;
-    border: 2px solid orangered;
-    color: orangered;
-}
-#box6+h1{
-    position: relative;
-    bottom: 270px;
-    left: 600px;
-    font-size: 40px;
-    width: 350px;
-   
-
-}
-#box6~hr{
-    width: 360px;
-    position: absolute;
-    top: 1100px;
-    left:585px;
-    background-color:gray;
-    font-weight: bold;
-    border: 2px solid gray;
-}
-
-
-#box7{
-    height: 510px;
-    width: 85%;
-    background-color:white;
-   position: relative;
-  bottom: 250px;
-  left: 90px;
-}
-#box7 input
+#fit
 {
-    height: 50px;
-    width: 600px;
-    margin-left: 50px;
-    background-color: #1c1b2d;
-    color: white;
-    font-size: 20px;
-    border: 1px solid #1c1b2d;
-    
-    
-   
-    
+    font-size: 30px;
+    position: relative;
+    left: 690px;
+    top: 40px;
+}
+#train
+{
+    font-size: 40px;
+    position: relative;
+    left: 650px;
+    top: 25px;
     
 }
-#box8>input{
+#neo
+{
+    font-size: 60px;
     position: relative;
-    top: 60px;
+    left: 610px;
+}
+#para1
+{
+    width: 900px;
+    height: 90px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 330px;
+    position: relative; 
+    bottom: 20px;
+}
+#btn1
+{
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+    left: 700px;
+}
+#btn1:hover
+{
+    background-color: white;
+    color: black;
+}
+#block2
+{
+    height: 600px;
+    width: 100vw;
+    background-image: url("us-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    position: relative;
+    color: white;
+    bottom: 25px;
 
 }
-#box9>input{
+#head1
+{
     position: relative;
     top: 100px;
-
+    left: 620px;
 }
-
-#box10>input{
+#line1
+{
+    height: 5px;
+    width: 60px;
+    background-color:crimson;
+    border: 1px solid crimson;
+    border-radius: 10px;
     position: relative;
-    top: 140px;
-    height: 130px;
-   
+    right:10px;
+    top: 80px;
+}
+#why
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.us
+{
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    line-height: 25px;
+    position: relative;
+    top: 150px;
+}
+#block3
+{
+    height:500px;
+    width: 100vw;
+    background-image: url("healthy-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    position: relative;
+    bottom: 48px;
+    color: white;
 
 }
-::placeholder{
-    color: white;
-    
-}
-#box11>button{
+#text5
+{
     position: relative;
-    top: 180px;
-    left: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: orangered;
-    color: white;
-    border: 2px solid orangered;
+    top: 100px;
+    left: 500px;
+}
+#btn2
+{
+    width: 150px;
     height: 50px;
-    width: 130px;
-    border-radius: 8px;
-    
-
-}
-#box11>button:hover{
+    font-size: 15px;
     background-color: transparent;
-    border: 2px solid orangered;
-    color: orangered;
-}
-#box11+img{
-   position: relative;
-   left: 700px;
-   bottom: 200px;
-}
-
-
-#box12>h1{
+    border: 1px solid white;
+    color: white;
     position: relative;
-    bottom: 250px;
-    left: 600px;
-    font-size: 40px;
-    width: 350px;
+    top: 150px;
+    left: 690px;
 }
-
-#box12 >hr:last-child{
-  
-    width: 215px;
-   position: absolute;
-   top: 1725px;
-   left: 595px;
-  
-   
-    background-color:gray;
-    font-weight: bold;
-    border: 2px solid gray;
+#btn2:hover
+{
+    background-color: white;
+    color: black;
 }
-
-#box13{
-    height: 400px;
-    width: 60%;
+#para2
+{
+    height: 180px;
+    width: 1200px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    left: 150px;
+    top: 130px;
+}
+#block4
+{
+    height: 700px;
+    width: 100vw;
+    background-image: url("trainer-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    bottom: 70px;
+}
+#line2
+{
+    height: 5px;
+    width: 60px;
+    background-color:crimson;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    position: relative;
+    top: 70px;   
+}
+#trainersname
+{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 115px;
     
-   
-    position: relative;
-    bottom: 270px;
-    left: 260px;
 }
-
-#box13>img{
+#trainers
+{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 120px;
+}
+#block5
+{
+    height: 580px;
+    width: 100vw;
+    background-color: rgba(5, 17, 53, 0.944);
+    background-attachment: fixed;
+    position: relative;
+    bottom: 70px;
+}
+#line3
+{
+    height: 5px;
+    width: 60px;
+    background-color:crimson;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    position: relative;
+    right: 170px;
+    top: 30px;
+}
+#contact
+{
+    display: flex;    
+}
+.forms
+{
+    width: 500px;
+    height: 40px;
+    font-size: 15px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+#btn3
+{
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    background-color:crimson;
+    border: 1px solid crimson;
+    color: white;
+    position: relative; 
+    left: 360px; 
+    margin-top: 15px; 
+}
+#block6
+{
+    width: 100vw;
+    height: 150px;
+    background-color: rgba(3, 1, 24, 0.914);
+    position: relative;
+    bottom: 70px;
+}
+#icons
+{
+    display: flex;
+    justify-content: space-evenly;
     position: relative;
     top: 50px;
 }
-#box13 h1{
-    position: relative;
-    left: 280px;
-    bottom: 100px;
-}
-#box13 h2{
-    position: relative;
-    left:340px;
-    bottom: 120px;
-    font-size: 18px;
-    color: orangered;
-
-}
-#box13 p{
-    height: 100px;
-    width: 850px;
-    background-color: orangered;
-    font-size: 20px;
-    text-align: justify;
-    line-height: 1.2;
- position: relative;
- bottom: 100px;
- color: white;
-}
-
-#circle{
+#des
+{
     display: flex;
-  width: 6%;
-  justify-content:space-evenly ;
-  position: relative;
-  bottom: 370px;
-  left: 630px;
-}
-#circle div:nth-child(1){
-    
-    background-color: orangered;
-    height: 20px;
-    width: 20px;
-    border: 1px solid orangered;
-    border-radius: 50%;
-
-    
-
-}
-#circle div:nth-child(2){
-    
-    background-color:black;
-    height: 20px;
-    width: 20px;
-    border: 1px solid black;
-    border-radius: 50%;
-    
-
-}
-#circle div:nth-child(3){
-    
-    background-color:orangered;
-    height: 20px;
-    width: 20px;
-    border: 1px solid orangered;
-    border-radius: 50%;
-    
-
-}
-
-#block4{
-    height: 300px;
-    width: 100%;
-   
- 
-    
-    
-}
-#block4 h1{
-    text-align: center;
-    margin-right: 60px;
-    font-size: 40px;
-}
-#block4 hr{
-   
-    width: 300px;
-    position: relative;
-    bottom: 20px;
-   right: 20px;
-   
-    
-     background-color:gray;
-     font-weight: bold;
-     border: 2px solid gray;
-}
-#box14{
-    
-    display: flex;
-  width: 35%;
-  justify-content:space-evenly ;
-    position: relative;
-    top: 30px;
-    left: 470px;
-  
- 
-    
-}
-
-#box15{
-    text-align: center;
-    margin: 150px auto;
-    background-color: black;
-    color: white;
-    height: 50px;
-    width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: space-evenly;
-    
+    font-size: 25px;
+    position: relative;
+    top: 50px;
 }
-
-
-
-
-
-    </style>
+#end
+{
+    position: relative;
+    bottom: 50px;
+    left: 600px;
+}
+     </style>
 </head>
 <body>
-    <header>
     <div id="block1">
-        <nav id="box1">
+        <nav>
+        <div id="items">
             <div>
-            <a href=""><span id="fregg"><i class="fa-solid fa-print" style="color: #dc1877;"></i>FREGG</span></a></div>
-            <div id="box2">
-               <a href=""><h1 class="heading">HOME</h1></a> 
-                <a href=""><h1 class="heading">ABOUT</h1></a>
-               <a href=""> <h1 class="heading">SERVICE</h1></a>
-                <a href=""><h1 class="heading">CONTACT US</h1></a>
-                <a href=""><i class="fa-solid fa-magnifying-glass" style="font-size: 23px;"></i></a>
+            <h2><a href="">NEOGYM</a></h2>
+        </div>
+            <div id="list">
+                <a href="">HOME</a>
+                <a href="">WHY US</a>
+                <a href="">TRAINERS</a>
+                <a href="">CONTACT</a>
+                <a href=""><i class="fa-brands fa-searchengin" style="color: #FFD43B;"></i></a>
             </div>
-        </nav>
-        
-        <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>
-        <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
-            
-        <h2 id="heading1">WELCOME TO Devops</h2>
-        <h1 id="heading2">CONTENT WRITING SERVICES</h1>
-        <p id="para1">It is a long established fact that a reader will be distracted by the readable <br> content of a pagewhen looking</p>
-        <button>Contact Us</button>
-        
+        </div>
+    </nav>
+    <div><h3 id="fit">FITNESS</h3></div>
+    <div><h2 id="train">TRAINING</h2></div>
+    <div><h1 id="neo">NEO GYM</h1></div>
+    <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, iste nesciunt? Dolorem neque eaque accusamus corporis totam quaerat iusto consequuntur, ipsa adipisci assumenda sit doloribus in officia ducimus expedita ea ut quibusdam explicabo </p>
+    <button id="btn1">CONTACT US</button>
     </div>
-
     <div id="block2">
-        <div id="box3">
-            <h1>
-                About Us </h1><hr>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ofletters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their</p>
-            <button>Get Started</button>
-            <img src="about-img.png" alt="" style="height: 350px; width: 600px;">
-            
+        <h1 id="head1">WHY CHOOSE US</h1>
+        <hr id="line1">
+        <div id="why">
+            <div class="us">
+                <img src="u-1.png" alt="equipment" height="70px" width="70px">
+                <h3 style="font-size: 20px;">QUALITY EQUIPMENT</h3>
+                <p style="font-size: 19px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, reiciendis.</p>
+            </div>
+            <div class="us">
+                <img src="u-4.png" alt="nutrition" height="70px" width="70px">
+                <h3 style="font-size: 20px;">NUTRIION</h3>
+                <p style="font-size: 19px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, obcaecati.</p>
+            </div>
+            <div class="us">
+                <img src="u-3.png" alt="diet" height="70px" width="70px">
+                <h3 style="font-size: 20px;">HEALTHY DIET PLAN</h3>
+                <p style="font-size: 19px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, accusamus?</p>
+            </div>
+            <div class="us">
+                <img src="u-2.png" alt="training" height="70px" width="70px">
+                <h3 style="font-size: 20px;">SPORT TRAINING</h3>
+                <p style="font-size: 19px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, laudantium.</p>
+            </div>
         </div>
     </div>
     <div id="block3">
-        <h1>At Your Service</h1><hr>
-        <div id="box4">
-            <img src="s-1.png" alt="">
-            <h1>Written with Love</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ofletters, as opposed to using 'Content here, content t,</p>
-            <button>Read More</button>
-            <img src="s-3.png" alt="">
-            <h1>Up to Date</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ofletters, as opposed to using 'Content here, content here', making it look like now use Lorem Ipsum astheir default model text,</p>
-            <button>Read More</button>
+        <h1 id="text5">HEALTHY MIND, HEALTHY BODY</h1>
+        <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur numquam, debitis architecto, nostrum non consequatur ducimus sed et inventore consectetur animi ut. Qui, voluptas? Voluptatum iure quaerat non, dignissimos dolore reiciendis labore pariatur! Quia autem facere iste architecto, ducimus rem nemo quos id natus repellat possimus, excepturi non aut Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ut laudantium aperiam eveniet? Hic ipsa dicta a, veniam quidem animi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur consequatur veritatis quas ipsa soluta,</p>
+        <button id="btn2">READ MORE</button>
+    </div>
+    <div id="block4">
+        <h1 style="position: relative; left: 600px; top: 90px;">OUR GYM TRAINERS</h1>
+        <hr id="line2">
+        <div id="trainersname">
+            <div><h3 style="position: relative; right: 70px;">Smirth Jon</h3></div>
+            <div><h3>Jean Doe</h3></div>
+            <div><h3 style="position: relative; left: 70px;">Alex Den</h3></div>
         </div>
-        <div id="box5">
-            <img src="s-2.png" alt="">
-            <h1>Fast Turnaround</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ofletters, as opposed to using 'Content here, content here', making it look like</p>
-            <button>Read More</button>
-            <img src="s-4.png" alt="">
-            <h1>Premium Content</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ofletters, as opposed to using 'Content here, content here', making it look like</p>
-            <button>Read More</button>
+        <div id="trainers">
+            <div><img src="t1 (1).jpg" alt="trainer1" style="border-radius: 20px; position: relative;"></div>
+            <div><img src="t2 (1).jpg" alt="trainer2" style="border-radius: 20px;"></div>
+            <div><img src="t3 (1).jpg" alt="trainer3" style="border-radius: 20px;"></div>
         </div>
-        <div id="box6">
-            <h1>Get Your Quote Today!</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            <button>Get A Quote</button>
-        </div>
-        <h1>Let's Get In Touch!</h1><hr>
-        <div id="box7">
-            <form action="">
-            <div id="box8"><input type="text" placeholder="Name" required></div>
-        <div id="box9"><input type="email" placeholder="Email" required></div>
-           <div id="box10"> <input type="text" placeholder="Message" required></div>
-           <div id="box11">
-             <button>Send</button>
-           </div>
-            <img src="contact-img.jpg" alt="">
+    </div>
+    <div id="block5">
+        <div id="contact">
+        <img src="contact-img.jpg" alt="" height="580px" width="50%">
+        <div>
+            <h1 style="position: relative; left: 50px; top: 50px;">CONTACT US</h1>
+            <hr id="line3">
+            <form action="" method="post" style="position: relative; left: 50px; top: 50px;">
+            <div><input type="text" required placeholder="Name" name="name" class="forms"></div>
+            <div><input type="email" name="mail" required placeholder="Email" class="forms"></div>
+            <div><input type="tel" name="ph" required maxlength="10" placeholder="Phone Number" class="forms"></div>
+            <div><input type="text" name="message" required placeholder="Message" style="height: 100px;" class="forms"></div>
+            <button id="btn3">SEND</button>
         </form>
         </div>
-
-        <div id="box12">
-        <h1>Testimonial</h1>
-        <hr></div>
-        <div id="box13">
-        <img src="client.jpg" alt="">
-        <h1>JOHNDUE</h1>
-        <h2>Farm & CO</h2>
-        <p><i class="fa-solid fa-quote-left" style="color:white;"></i> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &nbsp;&nbsp;  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea &nbsp;&nbsp; commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;   <i class="fa-solid fa-quote-right" style="color: white;"></i></p>
+    </div>
+    </div>
+    <div id="block6">
+        <div id="icons">
+            <div><a href=""><img src="location-white.png" alt="location"></a></div>
+            <div><a href=""><img src="telephone-white.png" alt="phone"></a></div>
+            <div><a href=""><img src="envelope-white.png" alt="mail"></a></div>
         </div>
-        <div id="circle">
-            <div id="i"></div>
-            <div id="j" ></div>
-            <div id="k"></div>
-           </div>
-        
-    
+        <div id="des">
+            <div><a href="" style="position: relative; left: 60px;">Location</a></div>
+            <div><a href="" style="position: relative; left: 60px;">+02 1234567890</a></div>
+            <div><a href="" style="position: relative;">mail@domain.com</a></div>
+        </div>
     </div>
-
-
-
-
-
-    <div id="block4">
-        <h1>Contact Us</h1>
-        <hr>
-        <div id="box14">
-      <a href=""><i class="fa-solid fa-location-dot fa-2xl" style="color: black; " ></i></a>
-      <a href=""><i class="fa-solid fa-phone-volume fa-2xl" style="color: black;"></i></a>
-      <a href=""><i class="fa-solid fa-envelope fa-2xl" style="color:black;"></i></a>
-    </div>
-       <div id="box15">Copyright © 2045 All Rights Reserved. By HTML Design</div>
-
-    </div>
-
-
-   
-</header>
+    <div id="end"><span style="font-size: 20px;"> © 2024 All Rights Reserved. By HTML Design</span></div>
 </body>
 </html>
+
+
