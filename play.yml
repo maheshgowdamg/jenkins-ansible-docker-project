@@ -16,7 +16,7 @@
       ignore_errors: yes
 
     - name: Log in to Docker Hub
-      command: echo "" | docker login -u maheshgowdamg25 --password-stdin
+      command: echo "Mahi@2001" | docker login -u maheshgowdamg25 --password-stdin
 
     - name: Pull Docker Image from Docker Hub
       command: docker pull maheshgowdamg25/webapp:latest
