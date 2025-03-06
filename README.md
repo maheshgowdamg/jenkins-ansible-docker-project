@@ -1,3 +1,7 @@
+![ansible_docker_server](https://github.com/user-attachments/assets/8d984207-ecfb-4b03-b288-dcab6db4863e)
+
+![project_1 (1)](https://github.com/user-attachments/assets/8085eb83-9a85-44ac-8f51-691fd07a8b48)
+
 ![Screenshot 2025-03-04 181050](https://github.com/user-attachments/assets/8a41b211-fde6-42dc-9508-afd4931dd4ed)
 
 
